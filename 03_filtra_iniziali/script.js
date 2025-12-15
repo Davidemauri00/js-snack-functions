@@ -12,7 +12,12 @@ function iniziali (listaNomi){
     return listaIniziali;
 }
 function letterFilter (listaI, lettera){
-    
+    let listaFinale = [];
+    for (let i = 0; i < listaI.length; i++){
+        if (listaI[i] === lettera){
+            listaFinale.push(listaI[i]); 
+        }
+    }
 }
 // Invoca la funzione qui e stampa il risultato in console
 const listaInit = iniziali(names);
