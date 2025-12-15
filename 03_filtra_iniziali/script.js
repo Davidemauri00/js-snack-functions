@@ -4,23 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function iniziali (listaNomi){
-    let listaIniziali = [];
-    for (let i = 0; i < listaNomi.length; i++){
-        listaIniziali.push(listaNomi[i].charAt(0));
-    }
-    return listaIniziali;
-}
 function letterFilter (listaI, lettera){
     let listaFinale = [];
     for (let i = 0; i < listaI.length; i++){
-        if (listaI[i] === lettera){
+        if (listaI[i].charAt(0) === lettera){
             listaFinale.push(listaI[i]); 
         }
     }
+    return listaFinale;
 }
 // Invoca la funzione qui e stampa il risultato in console
-const listaInit = iniziali(names);
 const filtro = prompt("Inserisci una lettera:");
-console.log
+console.log(letterFilter(names, filtro.toUpperCase().charAt(0)));
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
