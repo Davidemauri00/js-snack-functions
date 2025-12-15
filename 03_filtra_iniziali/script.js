@@ -11,9 +11,11 @@ function iniziali (listaNomi){
     }
     return listaIniziali;
 }
-
+function letterFilter (listaI, lettera){
+    
+}
 // Invoca la funzione qui e stampa il risultato in console
-
-
-
+const listaInit = iniziali(names);
+const filtro = prompt("Inserisci una lettera:");
+console.log
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
